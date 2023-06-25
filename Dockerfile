@@ -1,15 +1,11 @@
 FROM ubuntu:20.04
 
-RUN sudo apt-get install \
-    postgresql \
-    postgresql-client \
-    postgresql-server-dev-all \
-    redis-server \
-    python3 \
-    python3-pip \
-    ffmpeg \
-    git \
-    nginx
+RUN sudo apt-get install postgresql postgresql-client postgresql-server-dev-all
+RUN sudo apt-get install redis-server
+RUN sudo apt-get install python3 python3-pip
+RUN sudo apt-get install git
+RUN sudo apt-get install nginx
+RUN sudo apt-get install ffmpeg
 
 RUN git clone https://github.com/cgwire/zou.git /opt/zou && \
     git clone -b build https://github.com/cgwire/kitsu.git /opt/kitsu && \
