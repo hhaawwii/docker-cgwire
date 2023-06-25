@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN sudo apt-get install postgresql postgresql-client postgresql-server-dev-all
 RUN sudo apt-get install redis-server
