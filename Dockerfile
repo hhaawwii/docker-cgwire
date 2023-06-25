@@ -1,6 +1,6 @@
 FROM ubuntu:22.04
 
-RUN sudo apt-get install postgresql postgresql-client postgresql-server-dev-all
+RUN sudo apt install postgresql postgresql-client postgresql-server-dev-all
 RUN sudo apt-get install redis-server
 RUN sudo apt-get install python3 python3-pip
 RUN sudo apt-get install git
