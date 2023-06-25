@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-RUN apt-get apt-get install -y \
+RUN apt-get install -y \
     postgresql \
     postgresql-client \
     python3 \
