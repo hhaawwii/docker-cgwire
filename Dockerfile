@@ -1,10 +1,13 @@
 FROM ubuntu:20.04
 
-RUN apt-get install -y \
+RUN sudo apt-get update && apt-get install -y \
     postgresql \
     postgresql-client \
+    postgresql-server-dev-all \
+    redis-server \
     python3 \
     python3-pip \
+    ffmpeg \
     git \
     nginx
 
